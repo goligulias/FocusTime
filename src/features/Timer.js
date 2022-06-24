@@ -13,6 +13,7 @@ export const Timer = ({ focusSubject }) => {
 		<View style={styles.container}>
 			<View style={styles.countdown}>
 				<Countdown
+					minutes={minutes}
 					isPaused={!isStarted}
 					onProgress={setProgress}
 					onEnd={() => { }}
